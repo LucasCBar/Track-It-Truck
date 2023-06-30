@@ -10,8 +10,6 @@ Para elaborar esse teste, foi necessário usar meus conhecimentos em Javascript,
 
 Após ler e compreender o que foi pedido na elaboração do teste, elaborei um projeto no Figma para ter uma referência do estilo e da usabilidade da aplicação.
 
-[Link do projeto no figma: ](https://www.figma.com/file/fnR0lzzqJDlijAJTLNgILx/Interface-teste-de-est%C3%A1gio-Aiko?node-id=0%3A1&t=gEpD5g90OAgS4IHt-1)
-
 Com isso em mãos, ficou claro quais eram os meus próximos passos. Logo em seguida, analisei os dados disponibilizados para fazer a execução do teste. Os arquivos JSON simulam um banco de dados. Com isso, criei outro arquivo JSON (```db.json```) e passei todos os dados para ele para criar uma API falsa, utilizando a biblioteca JSON Server.
 
 Com a API em mãos, os dois últimos passos foram compreender o banco de dados que os dados disponíveis estavam simulando e escolher uma biblioteca para fazer o mapa. A biblioteca utilizada foi a Leaflet.
