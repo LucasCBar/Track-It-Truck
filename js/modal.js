@@ -2,8 +2,6 @@ function abrirModal(equipmentId, estado, equipamento, modelo) {
 
   let logica1 = JSON.parse(localStorage.getItem("data")).equipmentStateHistory.find(el => el.equipmentId == equipmentId)
 
-  console.log(logica1)
-
   let equipmentState = JSON.parse(localStorage.getItem("data")).equipmentState
 
   document.querySelector('.modal').classList.add('opened')
@@ -21,6 +19,8 @@ function abrirModal(equipmentId, estado, equipamento, modelo) {
   });
   document.querySelector('.modal-historico').innerHTML = listaHistorico;
 }
+
+
 
 const modalEl = document.querySelector('.modal');
 const closeBtn = document.querySelector('.close-modal');
