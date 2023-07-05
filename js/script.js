@@ -67,7 +67,12 @@ function renderData(filtro) {
       elementoMarcador = L.marker([lat, lon], { icon: redIcon }).addTo(map)
     }
 
+    function a() {
+
+    }
+
     elementoMarcador.bindPopup(`Equipamento: ${equipamento.name} Estado: ${equipStateAtual.name} `)
+
     elementoMarcador.on('mouseover', function () {
       this.openPopup();
     });
@@ -96,13 +101,13 @@ document.querySelector('#pesquisa').addEventListener('input', (e) => {
   renderData({ type: 'pesquisa', value: e.target.value })
 })
 
-var map = L.map('map').setView([-19.123457, -45.987654], 10.5);
+let map = L.map('map').setView([-19.123457, -45.987654], 10.5);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-var blueIcon = L.icon({
+let blueIcon = L.icon({
   iconUrl: '/img/marker-azul.png',
   shadowUrl: '/img/marker-shadow.png',
 
@@ -113,7 +118,7 @@ var blueIcon = L.icon({
   popupAnchor: [-3, -76]
 });
 
-var greenIcon = L.icon({
+let greenIcon = L.icon({
   iconUrl: '/img/marker-verde.png',
   shadowUrl: '/img/marker-shadow.png',
 
@@ -124,7 +129,7 @@ var greenIcon = L.icon({
   popupAnchor: [-3, -76]
 });
 
-var redIcon = L.icon({
+let redIcon = L.icon({
   iconUrl: '/img/marker-vermelho.png',
   shadowUrl: '/img/marker-shadow.png',
 

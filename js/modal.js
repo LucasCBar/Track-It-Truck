@@ -1,3 +1,6 @@
+const modalEl = document.querySelector('.modal');
+const closeBtn = document.querySelector('.close-modal');
+
 function abrirModal(equipmentId, estado, equipamento, modelo) {
 
   let logica1 = JSON.parse(localStorage.getItem("data")).equipmentStateHistory.find(el => el.equipmentId == equipmentId)
@@ -19,11 +22,6 @@ function abrirModal(equipmentId, estado, equipamento, modelo) {
   });
   document.querySelector('.modal-historico').innerHTML = listaHistorico;
 }
-
-
-
-const modalEl = document.querySelector('.modal');
-const closeBtn = document.querySelector('.close-modal');
 
 function closeModal() {
   modalEl.classList.remove('opened');
