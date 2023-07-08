@@ -1,18 +1,22 @@
 # Projeto Track It Truck 🚚
 
-# Descrição
+# Ideia do Projeto 
 
-O problema proposto foi desenvolver o frontend de uma aplicação web que trate e exiba essas informações para os gestores da operação.
+A ideia deste projeto surgiu da necessidade de criar um mapa em uma aplicação para trabalhos acadêmicos. Encontrei a framework "Leaflet" e despertou minha curiosidade em utilizá-la. Então, pensei em um projeto que exibisse a localização de diferentes caminhões e seus respectivos estados de operação.
 
-Para elaborar esse teste, foi necessário usar meus conhecimentos em Javascript, HTML, CSS e análise de banco de dados.
+# Objetivo
+
+O objetivo deste projeto foi aplicar meus conhecimentos em JavaScript, aprofundar meu conhecimento na framework "Leaflet" e desenvolver o frontend desta aplicação.
+
+Para elaborar esta aplicação, foi necessário utilizar conhecimentos em JavaScript, HTML, CSS e JSON Server.
 
 # Como foi feito o Desafio?
 
-Após ler e compreender o que foi pedido na elaboração do teste, elaborei um projeto no Figma para ter uma referência do estilo e da usabilidade da aplicação.
+Com a ideia em mente, criei um arquivo JSON para simular o backend da aplicação e gerar uma API para construir o frontend.
 
-Com isso em mãos, ficou claro quais eram os meus próximos passos. Logo em seguida, analisei os dados disponibilizados para fazer a execução do teste. Os arquivos JSON simulam um banco de dados. Com isso, criei outro arquivo JSON (```db.json```) e passei todos os dados para ele para criar uma API falsa, utilizando a biblioteca JSON Server.
+Para criar a API, simulei um banco de dados com as seguintes tabelas: ```equipment```, ```equipmentModel```, ```equipmentPositionHistory```, ```equipmentState```, ```equipmentStateHistory```, para armazenar todas as informações provenientes do backend.
 
-Com a API em mãos, os dois últimos passos foram compreender o banco de dados que os dados disponíveis estavam simulando e escolher uma biblioteca para fazer o mapa. A biblioteca utilizada foi a Leaflet.
+Após gerar a API, o próximo passo foi compreender a biblioteca "Leaflet" para criar o mapa e aplicar meus conhecimentos na construção do frontend.
 
 # Como utilizar a aplicação?
 
@@ -20,7 +24,7 @@ Os passos para rodar o projeto são:
 
 1. Ter o Node.js instalado na máquina;
 2. Também é necessário ter a biblioteca JSON Server instalada. Se esse não for o caso, é possível baixá-la dando o seguinte comando no prompt de comando: ```npm install -g json-server```;
-3. Rode o seguinte comando para criar a API falsa: ```json-server --watch ./data/db.json```;
+3. Rode o seguinte comando para criar a API fake: ```json-server --watch ./data/db.json```;
 
 # Tecnologias escolhidas
 
