@@ -4,7 +4,6 @@ const closeBtn = document.querySelector('.close-modal');
 function abrirModal(equipmentId, estado, equipamento, modelo) {
 
   let logica1 = JSON.parse(localStorage.getItem("data")).equipmentStateHistory.find(el => el.equipmentId == equipmentId)
-
   let equipmentState = JSON.parse(localStorage.getItem("data")).equipmentState
 
   document.querySelector('.modal').classList.add('opened')
