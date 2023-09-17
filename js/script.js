@@ -11,9 +11,6 @@ async function loadData() {
   }
 }
 
-
-
-
 function renderData(filtro) {
   const data = JSON.parse(localStorage.getItem('data'))
   data.equipmentPositionHistory.forEach(equipPosicao => {
